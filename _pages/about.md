@@ -11,17 +11,19 @@ redirect_from:
 *Exploring Data Realms: Parveen embarks on a journey through data engineering after a 2-year education in **Business Analytics**, specializing in **Data Engineering***
 
 **Update**: September 5th, 2024
-
+````
 <!--**My CV / Resume:** [DE Resume Version 10]() 
 -->
+````
 ## About Me
 
 **Based:** Dallas, TX
 
 **Status:** Currently Open for a **Data Engineer** Job
-
+````
 <!--**Contact me:** Zalo (+84) 38 230 4536
 -->
+````
 **Email:** parveenkm325@gmail.com
 
 **Linkedin**: [Click Here](https://www.linkedin.com/in/parveen-kumar22/)
@@ -32,11 +34,12 @@ During my time at university, I was the best at developing Data Project that met
 
 In my spare time, I am always excited investigate new data analysis / manipulation tools and approaches, always looking for ways to broaden my knowledge and sharpen my skills.
 If you're seeking for someone with a unique combination of Data Engineering skills, I'd love to talk about how I might help your projects and organization. Please contact me and let's begin on a data-driven journey together!
-
+````
 <!--*The CV is included within the repository*
 
 This is a repository in which I can show off my skills, projects, and progression in **Data Engineering / Data Science**.
 -->
+````
 ### Why Data Engineer?
 
 At the beginning of my journey into the realm of data, I initially aspired to acquire a career in Data Analysis. However, as my university education progressed, I dug deeply into various subjects and consistently be the best at, achieving the highest distinctions across disciplines such as **Object-oriented Programming** and **Big Data**. While my focus wasn’t solely on excelling in these areas, my commitment to excellence resulted in commendable performance. As I approached the end of my university time, I realized the potential for synergy between my aptitude in **Data Analysis** and my proficiency in **Data Engineering**. This realization led me to the combination role of the both 2 fields: As a **Data Engineer** - which was the best decision I have made in my lifetime.
@@ -46,7 +49,7 @@ At the beginning of my journey into the realm of data, I initially aspired to ac
 In fact, while I was taking data engineering courses, I did consider becoming a **Data Scientist**, who would spend their entire working day researching ways to make machine learning algorithms more accurate and identifying key learning characteristics for a dataset, or an **Artificial Intelligence Scientist**, who would create extremely sophisticated language models and dedicate their entire life to refining them. Yep, I had some thought, but eventually, I just love being a **Data Engineer**, perhaps an angel has led me this career path, who knows.
 
 I possessed skills that were applicable across all three roles, enabling me to pivot between them effortlessly. But at the end of the day, technology is technology, I just simply do not want to switch at all.
-
+````
 <!--### Why did I attend 2 Universities but only has one Bachelor's Degree?
 
 For your information, **Hanoi University of Science and Technology (HUST)** is literally the best university of Vietnam, ranked 350 globally (*According to IDP Education, 2022*), anyone that graduates this university is guaranteed to have a good career. 
@@ -55,6 +58,7 @@ In the other hand, **Swinburne University of Technology Hanoi** is an Australia-
 
 Why would I transfer to a different university after only four months of study? You might wonder. The studying environment and discipline may hold the key to the answer. I had a really difficult time adjusting to the constant state of enslavement during my time as a student at **HUST**, and I had a lot of trouble communicating. Then I took the decision to look for a university across the globe, and lucky for me, one of my best friends who was studying in Australia at the time mentioned **Swinburne University**. That was at the beginning of 2020, and once I took my very first class at this university, everything changed. Since then, I have been in love with the institution; the atmosphere for education is excellent, people are interacting with one another, there is no backstabbing, no trash-talking, no arguing, just peace.
 -->
+````
 ### What did I prepare for the Data Engineering Career?
 
 What did I prepared? Everything. But if you are curious, here is the breakdown of all the knowledge I have gathered to be a part of **Data Engineering** community:
@@ -80,6 +84,7 @@ What did I prepared? Everything. But if you are curious, here is the breakdown o
 **9. MongoDB / Redis**  --------------------------------  [✸✸✸✸✸✸✸✸✸✸✸✸※※※※※※※※]
 
 **10. Git**  ------------------------------------------------  [✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸※※]
+````
 <!--
 **11. Amazon Web Services**  ---------------------------  [✸✸✸✸✸※※※※※※※※※※※※※※※]
 
@@ -87,15 +92,19 @@ What did I prepared? Everything. But if you are curious, here is the breakdown o
 
 **13.  Kotlin**  --------------------------------------------  [✸✸✸✸✸✸✸※※※※※※※※※※※※※]
 -->
+````
 **11.  Airflow**  -------------------------------------------  [✸✸✸✸✸※※※※※※※※※※※※※※※]
+````
 <!--
 **15.  HTML / CSS**  --------------------------------------  [✸✸✸✸✸✸✸✸✸✸✸✸✸※※※※※※※]
 -->
+````
 **12.  Object-Oriented Programming**  ----------------------  [✸✸✸✸✸✸✸※※※※※※※※※※※※※]
 
 **13.  Data Structures and Patterns**  -------------------  [✸✸✸✸✸※※※※※※※※※※※※※※※]
 
 **14.  Agile Methodology**  -----------------------------  [✸✸✸✸✸✸✸✸✸※※※※※※※※※※※]
+````
 <!--
 **19. Tkinter UI**
 
@@ -109,12 +118,15 @@ What did I prepared? Everything. But if you are curious, here is the breakdown o
 
 **24. Prompt Engineering**
 -->
+````
 **15. CI/CD**  ---------------------------------  [✸✸✸✸✸✸✸✸※※※※※※※※※※※※]
+````
 <!--
 **26. TensorFlow**
 
 **27. Docker**
 -->
+````
 ## Education
 
 - *The University of Texas at Dallas,Business Analytics, Aug 2022 - May 2024*
@@ -126,7 +138,7 @@ What did I prepared? Everything. But if you are curious, here is the breakdown o
 ## Awards
 
 **Related Awards**: 
- - Best performance in the subject "Database Analysis and Design**" with the academic score of *99/100*
+ - Best performance in the subject "Database Analysis and Design**" with the academic score of "**99/100**"
  - Qualified High Distinction in the subject "**Big Data**"				
  - Qualified High Distinction in the subject "**Aws Solution Architech**"
  - Graduate teacher Assistant For Subject "**Big Data**"
@@ -136,6 +148,7 @@ What did I prepared? Everything. But if you are curious, here is the breakdown o
 In my portfolio, you'll find a collection of diverse data science and data analysis projects that showcase my skills in extracting valuable insights from data, solving real-world problems, and making data-driven decisions. The below parts is where I placed the files and their details.
 
 ### Table of Contents
+````
 <!--
   - Programming (Python)
     - [Professional Cloud Data Engineer Certification Assistance Tool](https://github.com/tuanx18/python-gcp-cert-tool/tree/main)
@@ -387,6 +400,7 @@ In my portfolio, you'll find a collection of diverse data science and data analy
 
 **Repository**: [AdventureWorks Practical Knowledge Showcase Project](https://github.com/tuanx18/ds-sql-AW-showcase/tree/main)
 -->
+````
 **Technology**: *SQL - SQL Server*
 
 **Description**: This initiative utilizes the AdventureWorks 2022 Database as the foundational data source for knowledge acquisition. It is compartmentalized into 20 distinct sections, each designed to cover specific SQL concepts. Within each section, there are 50 SQL requirements, each articulated in a concise format ranging from a single line to a maximum of 50 lines, depending on the complexity of the task. The complexity of requirements intensifies progressively, ensuring comprehensive coverage from foundational to advanced levels. Each requirement is uniquely numbered from 1 to 1000, incorporating distinctive elements to prevent replication. The following is an exhaustive list detailing each segment of this comprehensive project, along with their respective specifics.
