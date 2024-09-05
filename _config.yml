@@ -21,7 +21,7 @@ repository               : "parveenmittal1/parveenmittal1.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png"
   name             : "Parveen Kumar"
   pronouns         : "He/Him"
   bio              : "Data Engineer"
