@@ -11,19 +11,13 @@ redirect_from:
 *Exploring Data Realms: Parveen embarks on a journey through data engineering after a 2-year education in **Business Analytics**, specializing in **Data Engineering***
 
 **Update**: September 5th, 2024
-````
-<!--**My CV / Resume:** [DE Resume Version 10]() 
--->
-````
+
 ## About Me
 
 **Based:** Dallas, TX
 
 **Status:** Currently Open for a **Data Engineer** Job
-````
-<!--**Contact me:** Zalo (+84) 38 230 4536
--->
-````
+
 **Email:** parveenkm325@gmail.com
 
 **Linkedin**: [Click Here](https://www.linkedin.com/in/parveen-kumar22/)
@@ -34,12 +28,7 @@ During my time at university, I was the best at developing Data Project that met
 
 In my spare time, I am always excited investigate new data analysis / manipulation tools and approaches, always looking for ways to broaden my knowledge and sharpen my skills.
 If you're seeking for someone with a unique combination of Data Engineering skills, I'd love to talk about how I might help your projects and organization. Please contact me and let's begin on a data-driven journey together!
-````
-<!--*The CV is included within the repository*
 
-This is a repository in which I can show off my skills, projects, and progression in **Data Engineering / Data Science**.
--->
-````
 ### Why Data Engineer?
 
 At the beginning of my journey into the realm of data, I initially aspired to acquire a career in Data Analysis. However, as my university education progressed, I dug deeply into various subjects and consistently be the best at, achieving the highest distinctions across disciplines such as **Object-oriented Programming** and **Big Data**. While my focus wasn’t solely on excelling in these areas, my commitment to excellence resulted in commendable performance. As I approached the end of my university time, I realized the potential for synergy between my aptitude in **Data Analysis** and my proficiency in **Data Engineering**. This realization led me to the combination role of the both 2 fields: As a **Data Engineer** - which was the best decision I have made in my lifetime.
@@ -49,16 +38,7 @@ At the beginning of my journey into the realm of data, I initially aspired to ac
 In fact, while I was taking data engineering courses, I did consider becoming a **Data Scientist**, who would spend their entire working day researching ways to make machine learning algorithms more accurate and identifying key learning characteristics for a dataset, or an **Artificial Intelligence Scientist**, who would create extremely sophisticated language models and dedicate their entire life to refining them. Yep, I had some thought, but eventually, I just love being a **Data Engineer**, perhaps an angel has led me this career path, who knows.
 
 I possessed skills that were applicable across all three roles, enabling me to pivot between them effortlessly. But at the end of the day, technology is technology, I just simply do not want to switch at all.
-````
-<!--### Why did I attend 2 Universities but only has one Bachelor's Degree?
 
-For your information, **Hanoi University of Science and Technology (HUST)** is literally the best university of Vietnam, ranked 350 globally (*According to IDP Education, 2022*), anyone that graduates this university is guaranteed to have a good career. 
-
-In the other hand, **Swinburne University of Technology Hanoi** is an Australia-based Technology university, ranked #43 in the world across all disciplines, ranked #2 in the world for Mathematics and Computer Science (*According to IDP Education, 2022*).
-
-Why would I transfer to a different university after only four months of study? You might wonder. The studying environment and discipline may hold the key to the answer. I had a really difficult time adjusting to the constant state of enslavement during my time as a student at **HUST**, and I had a lot of trouble communicating. Then I took the decision to look for a university across the globe, and lucky for me, one of my best friends who was studying in Australia at the time mentioned **Swinburne University**. That was at the beginning of 2020, and once I took my very first class at this university, everything changed. Since then, I have been in love with the institution; the atmosphere for education is excellent, people are interacting with one another, there is no backstabbing, no trash-talking, no arguing, just peace.
--->
-````
 ### What did I prepare for the Data Engineering Career?
 
 What did I prepared? Everything. But if you are curious, here is the breakdown of all the knowledge I have gathered to be a part of **Data Engineering** community:
@@ -84,49 +64,17 @@ What did I prepared? Everything. But if you are curious, here is the breakdown o
 **9. MongoDB / Redis**  --------------------------------  [✸✸✸✸✸✸✸✸✸✸✸✸※※※※※※※※]
 
 **10. Git**  ------------------------------------------------  [✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸✸※※]
-````
-<!--
-**11. Amazon Web Services**  ---------------------------  [✸✸✸✸✸※※※※※※※※※※※※※※※]
 
-**12.  C++**  ----------------------------------------------  [✸✸✸✸✸※※※※※※※※※※※※※※※]
-
-**13.  Kotlin**  --------------------------------------------  [✸✸✸✸✸✸✸※※※※※※※※※※※※※]
--->
-````
 **11.  Airflow**  -------------------------------------------  [✸✸✸✸✸※※※※※※※※※※※※※※※]
-````
-<!--
-**15.  HTML / CSS**  --------------------------------------  [✸✸✸✸✸✸✸✸✸✸✸✸✸※※※※※※※]
--->
-````
+
 **12.  Object-Oriented Programming**  ----------------------  [✸✸✸✸✸✸✸※※※※※※※※※※※※※]
 
 **13.  Data Structures and Patterns**  -------------------  [✸✸✸✸✸※※※※※※※※※※※※※※※]
 
 **14.  Agile Methodology**  -----------------------------  [✸✸✸✸✸✸✸✸✸※※※※※※※※※※※]
-````
-<!--
-**19. Tkinter UI**
 
-**20. Natural Language Processing**
-
-**21. OpenAI API**
-
-**22. Deep Learning Models**
-
-**23. Google Cloud Platform**
-
-**24. Prompt Engineering**
--->
-````
 **15. CI/CD**  ---------------------------------  [✸✸✸✸✸✸✸✸※※※※※※※※※※※※]
-````
-<!--
-**26. TensorFlow**
 
-**27. Docker**
--->
-````
 ## Education
 
 - *The University of Texas at Dallas,Business Analytics, Aug 2022 - May 2024*
@@ -148,259 +96,7 @@ What did I prepared? Everything. But if you are curious, here is the breakdown o
 In my portfolio, you'll find a collection of diverse data science and data analysis projects that showcase my skills in extracting valuable insights from data, solving real-world problems, and making data-driven decisions. The below parts is where I placed the files and their details.
 
 ### Table of Contents
-````
-<!--
-  - Programming (Python)
-    - [Professional Cloud Data Engineer Certification Assistance Tool](https://github.com/tuanx18/python-gcp-cert-tool/tree/main)
-  - Data Science (Python)
-    - [Customer Churn Prediction](https://github.com/tuanx18/ds-projects/blob/main/Customer_Churn_Prediction.ipynb)
-    - [Travel Insurance Prediction](https://github.com/tuanx18/ds-projects/blob/main/Travel_Insurance_Buying_Prediction.ipynb)
-    - [Australia Rain Prediction](https://github.com/tuanx18/ds-projects/blob/main/Australia_Rain_Prediction.ipynb)
-    - [Student Performance in Exam Analysis](https://github.com/tuanx18/ds-projects/blob/main/Student_Performance_in_Exam_Analysis.ipynb)
-    - [Stellar Classification](https://github.com/tuanx18/ds-projects/blob/main/Stellar_Classification.ipynb)
-    - [Mobile Price Classification](https://github.com/tuanx18/ds-python-projects/blob/main/Mobile_Price_Classification.ipynb)
-    - [Fatalities in Israel-Palestines War Analysis](https://github.com/tuanx18/ds-projects/blob/main/Fatalities_in_Israel_Palestines_War_Analysis.ipynb)
-    - [Airline Passenger Satisfaction Analysis](https://github.com/tuanx18/ds-projects/blob/main/Airline_Passenger_Satisfaction.ipynb)
-    - [Water Potability Prediction](https://github.com/tuanx18/ds-projects/blob/main/Water_Potable_Prediction.ipynb)
-    - [Breast Cancer Prediction](https://github.com/tuanx18/ds-projects/blob/main/Breast_Cancer_Prediction.ipynb)
-    - [Diabetes Analysis and Prediction](https://github.com/tuanx18/ds-projects/blob/main/Diabetes_Analysis-Prediction.ipynb)
-    - [Used Car Price Analysis]()
-  - Spark SQL / PySpark
-    - [Billionaire Research And Exploration](https://github.com/tuanx18/apache-spark-projects/blob/main/Billionaire_Research_And_Exploration.ipynb)
-  - SQL
-    - [AdventureWorks Practical Knowledge Showcase Project](https://github.com/tuanx18/ds-sql-AW-showcase/tree/main)
-      - [Part 1 - Getting used to beginner level of SQL commands](https://github.com/tuanx18/ds-sql-projects/blob/main/AW-Project-Part-1.sql)
-      - [Part 2 - Diving Deeper into Data Manipulation](https://github.com/tuanx18/ds-sql-projects/blob/main/AW-Project-Part-2.sql)
-      - [Part 3 - SQL Metamorphosis: Crafting with REPLACE, CAST, and NTILE](https://github.com/tuanx18/ds-sql-projects/blob/main/AW-Project-Part-3.sql)
-      - [Part 4 - SQL Shapeshifters: Introduction to Data Ranking and Splitting](https://github.com/tuanx18/ds-sql-projects/blob/main/AW-Project-Part-4.sql)
-      - [Part 5 - Introduction to Functions: Learning about Table-Returned Functions](https://github.com/tuanx18/ds-sql-projects/blob/main/AW-Project-Part-5.sql)
-      - [Part 6 - Dynamic SQL and Stored Procedures](https://github.com/tuanx18/ds-sql-projects/blob/main/AW-Project-Part-6.sql)
-      - [Part 7 - Advanced Procedures and Function Problems](https://github.com/tuanx18/ds-sql-projects/blob/main/AW-Project-Part-7.sql)
-      - [Part 8 - The Art of SQL Logic: Looping Techniques and Conditional Structures](https://github.com/tuanx18/ds-sql-projects/blob/main/AW-Project-Part-8.sql)
 
-### 1. Programming (Python)
-
-#### Google Cloud Platform Data Engineer Certificate Assistant Tool
-
-**Code**: [Professional Cloud Data Engineer Certification Assistance Tool](https://github.com/tuanx18/python-gcp-cert-tool/tree/main)
-
-**Description**: The GCP Quiz Application is a comprehensive tool designed for users to enhance their knowledge and proficiency in Google Cloud Platform (GCP). It offers a diverse range of quizzes covering various GCP services and concepts, including compute, storage, networking, security, and more. The application facilitates effective learning through interactive quizzes, detailed explanations for correct and incorrect answers, and progress tracking features. Additionally, it incorporates customizable quiz options, enabling users to tailor quizzes based on their specific learning objectives and preferences.
-
-**Goal**: To help users deepen their understanding of GCP services and concepts, ultimately empowering them to excel in GCP-related certifications, projects, and professional endeavors. By offering a platform for practicing and assessing knowledge, the application aims to foster continuous learning and skill development within the GCP ecosystem.
-
-**Skills**: Object-oriented Programming, Quiz customization, interactive learning, progress tracking, GCP service knowledge, exam preparation, skill enhancement
-
-**Technology**: Python, Tkinter, Pandas, Time Management Modules
-
-**Results**: Users can effectively test and improve their knowledge of GCP services and concepts through interactive quizzes, achieving a deeper understanding and proficiency in Google Cloud Platform.
-
-### 2. Data Science using Python
-
-*Public Repository:* [Python DA](https://github.com/tuanx18/ds-python-projects)
-
-#### Customer Churn Prediction
-
-**Code**: [Customer Churn Prediction](https://github.com/tuanx18/ds-projects/blob/main/Customer_Churn_Prediction.ipynb)
-
-**Description**: The project encompasses a multifaceted approach, including crucial tasks such as data cleaning, in-depth data analysis, and comprehensive data visualization to glean insights. Additionally, it employs the creation of a confusion matrix to evaluate model performance, addressing the data imbalance through techniques like data balancing. Furthermore, the project incorporates data scaling methods to enhance model efficiency and employs a range of machine learning algorithms to build predictive models, facilitating accurate predictions regarding customer churn behavior.
-
-**Goal**: To forecast customer behavior using a dataset comprising 19 feature columns and a target column, predicting customer return likelihood
-
-**Skills**: data cleaning, data analysis, data visualization, confusion matrix, balancing data, data scaling, machine learning, predictive models
-
-**Technology**: Python, Pandas, Numpy, Matplotlib, Histplot, Correlation Heatmap, Confusion Matrix, Classification Report, Logistic Regression, Decision Tree, Random Forest, K-Neighbors Classifier, GaussianNB, Support Vector Machine, SMOTE, GridSearch
-
-**Results**: predicted customer return behavior using machine learning models trained on feature-rich data, achieving an accuracy of 97% in determining potential churn.
-
-#### Travel Insurance Prediction
-
-**Code** : [Travel Insurance Prediction](https://github.com/tuanx18/ds-projects/blob/main/Travel_Insurance_Buying_Prediction.ipynb)
-
-**Description**: By using machine learning models to forecast outcomes based on consumers who have already purchased insurance, this project assists the insurance company in focusing on new clients based on the qualities and characteristics that they gave. By focusing on the right consumers, the company may cut costs, utilize data, and increase profits by utilizing the computer's intelligence.
-
-**Goal**: To predict customer who would want to buy the Travel Insurance and who do not.
-
-**Skills**: data cleaning, data analysis, data visualization, confusion matrix, balancing data, data scaling, machine learning, predictive models
-
-**Technology**: Python, Pandas, Numpy, Matplotlib, Histplot, Correlation Heatmap, Confusion Matrix, Classification Report, ROC Curve, Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, K-Neighbors Classifier, GaussianNB, Multi-layer Perceptron, XGBoost, CatBoost, SMOTE, time, random
-
-**Results**: Utilized various machine learning models to predict customers' likelihood to purchase travel insurance, enhancing the company's ability to target potential clients and optimize profits.
-
-#### Australia Rain Prediction
-
-**Code** : [Australia Rain Prediction](https://github.com/tuanx18/ds-projects/blob/main/Australia_Rain_Prediction.ipynb)
-
-**Description**: This project is centered around predicting tomorrow's rain in Australia. The dataset used comprises approximately 10 years of daily weather observations from multiple locations across the country. The primary objective of this project is to develop classification models that can determine whether it will rain tomorrow (Yes or No) based on historical weather data.
-
-**Goal**: To predict if there will be rain in the next day based on today's weather features
-
-**Skills**: data cleaning, data analysis, data visualization, data scaling, machine learning, predictive models
-
-**Technology**: Python, Pandas, Numpy, Matplotlib, Histplot, Correlation Heatmap, Confusion Matrix, Classification Report, ROC Curve, Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, K-Neighbors Classifier, Label Encoder, Plotpy Express, StandardScaler
-
-**Results**: Developed and evaluated classification models, including Random Forest, for predicting rain in Australia based on historical weather data, with the Random Forest model achieving the highest accuracy and precision.
-
-#### Student Performance in Exam Analysis
-
-**Code** : [Student Performance in Exam Analysis](https://github.com/tuanx18/ds-projects/blob/main/Student_Performance_in_Exam_Analysis.ipynb)
-
-**Description**: This project conducted an extensive data analysis project focusing on the factors influencing students' test scores. Utilizing data visualization and statistical techniques, I uncovered key insights into the role of poverty, parental education, ethnicity, and test preparation in student performance. This project not only provided valuable insights for educational improvement but also emphasized the importance of data-driven decision-making in addressing academic disparities.
-
-**Goal**: To analyze a dataset containing information about students' test scores and various demographic factors to gain insights into the relationships between these variables
-
-**Skills**: data cleaning, data analysis, data visualization, storytelling.
-
-**Technology**: Python, Pandas, Numpy, Matplotlib, Histplot, Math, Seaborn
-
-**Results**: A comprehensive analysis of the factors impacting students' test scores, highlighting the significance of socioeconomic status, parental education, ethnicity, and test preparation, which can inform targeted educational interventions and policy decisions
-
-#### Stellar Classification
-
-**Code** : [Stellar Classification](https://github.com/tuanx18/ds-projects/blob/main/Stellar_Classification.ipynb)
-
-**Description**: Our data analysis and data science project is a groundbreaking endeavor that aims to uncover the mysteries of the universe by classifying celestial objects such as stars, quasars, and galaxies. Equipped with a dataset containing 18 curated feature columns, our project holds the promise of advancing astronomical science and discovery in several remarkable ways.
-
-**Goal**: To classify the type of stars for further astronomical purposes
-
-**Skills**: data cleaning, data analysis, data visualization, machine learning, predictive models, confusion matrix, balancing data.
-
-**Technology**: Python, Pandas, Numpy, Matplotlib, Histplot, Correlation Heatmap, Confusion Matrix, Classification Report, ROC Curve, Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, K-Neighbors Classifier, GaussianNB, Multi-layer Perceptron
-
-**Results**: Applied machine learning models to classify celestial objects, including stars, quasars, and galaxies, enhancing our understanding of the universe and supporting data-driven advancements in astronomical research.
-
-#### Mobile Price Classification 
-
-**Code** : [Mobile Price Classification](https://github.com/tuanx18/ds-python-projects/blob/main/Mobile_Price_Classification.ipynb)
-
-**Description**: The project involved working with a dataset encompassing 3000 rows and 20 distinct features representing various attributes of phones, including RAM, battery life, dimensions (width, height, depth), pixel specifications, color, and more. Each phone's data was utilized to predict its price class, categorized into four classes: lowest price (Class 0), normal price (Class 1), above-average price (Class 2), and expensive phones (Class 3).
-
-**Goal**: To leverage machine learning techniques on a dataset comprising 3000 phone entries with 20 features to accurately predict the price class of each phone, categorized into distinct pricing tiers.
-
-**Skills**: data cleaning, data analysis, data visualization, machine learning, predictive models, confusion matrix, data scaling
-
-**Technology**: Python, Pandas, Numpy, Matplotlib, Histplot, Correlation Heatmap, Confusion Matrix, Classification Report, MinMaxScaler, Logistic Regression, Decision Tree, Random Forest, XGBoost, Support Vector Machine ,GaussianNB
-
-**Results**: The project successfully developed predictive models that accurately categorized phones into price classes, enabling effective classification of phones based on their attributes into different pricing tiers.
-
-#### Fatalities in Israel-Palestines War Analysis
-
-**Code** : [Fatalities in Israel-Palestines War Analysis](https://github.com/tuanx18/ds-projects/blob/main/Fatalities_in_Israel_Palestines_War_Analysis.ipynb)
-
-**Description**: The "Fatalities in Israel-Palestine War Analysis" project is a comprehensive data analysis and visualization endeavor aimed at shedding light on the grim and complex topic of fatalities within the Israel-Palestine conflict from 2000 to 2023. This project utilizes a wealth of data to provide a deep and insightful exploration of the various aspects of casualties, including their numbers, causes, the involved forces, geographical distribution, and more. The project starts by collecting and organizing a vast dataset containing statistics related to fatalities during the Israel-Palestine conflict. This data is meticulously curated and processed to ensure accuracy and relevance.
-
-**Goal**: To analyse the number of deaths and their causes in order to see the destruction happening within the warzone from year 2000 to 2023
-
-**Skills**: data cleaning, data analysis, data visualization, time series, geological analysis.
-
-**Technology**: Python, Pandas, Matplotlib, Histplot, Time Series.
-
-**Results**: Conducted a comprehensive analysis of fatalities within the Israel-Palestine conflict from 2000 to 2023, exploring casualties, their causes, geographic distribution, and more, to shed light on the complex and grim topic of war-related deaths.
-
-#### Airline Passenger Satisfaction Analysis
-
-**Code** : [Airline Passenger Satisfaction Analysis](https://github.com/tuanx18/ds-projects/blob/main/Airline_Passenger_Satisfaction.ipynb)
-
-**Description**: This project assists an airline in identifying areas for improvement based on feedback information from each client who utilized its services. The collection of data includes a wide range of information, including consumer gender, age, and type as well as numerous rating criteria like Inflight service and Cleanliness. It comprises 23 fields in total that are used to determine whether or not the customer is satisfied. My EDA was followed by various recommendations for successful problem-solving tactics. These suggestions intended to improve my strategy and were supported by data-driven insights. Then, in order to advise the person who required it, I utilized 10 different machine learning models to determine which one was the best and most effective.
-
-**Goal**: To determine in which fields do the airline need improvement
-
-**Skills**: data cleaning, data analysis, data visualization, machine learning, predictive models, confusion matrix, balancing data.
-
-**Technology**: Python, Pandas, Matplotlib, Histplot, Correlation Heatmap, Confusion Matrix, Classification Report, RobustScaler, ROC Curve, CatBoost, Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, Ada Boost, K-Neighbors Classifier, GaussianNB, Multi-layer Perceptron
-
-**Results**: Utilized various machine learning models to identify areas for improvement in an airline's services based on customer feedback, enhancing the airline's strategy and customer satisfaction
-
-#### Diabetes Prediction
-
-**Code** : [Diabetes Analysis and Prediction](https://github.com/tuanx18/ds-projects/blob/main/Diabetes_Analysis-Prediction.ipynb)
-
-**Description**: The dataset includes hundreds of thousands of entries on each patient to test and scan for Diabetes. Each record contains diabetes-related statistics (age, gender, hypertension history, heart disease history, smoking history, bmi, HbA1c level, blood glucose level), and the last column is the Diabete-infected Classifier; anyone with a 1 on this field is tested Positive for Diabetes, and anyone with a 0 is tested No-Diabete. The project's workflow is as follows: Data Collection, Data Cleaning, Data Preprocessing, Exploratory Data Analysis, Disease Prediction Using Machine Learning Algorithms.
-
-**Goal**: To determine what factors could be the cause for Diabetes, and to predict the disease in the future based on the statistics.
-
-**Skills**: data cleaning, data analysis, data visualization, machine learning, predictive models, confusion matrix, balancing data.
-
-**Technology**: Python, Pandas, Matplotlib, Seaborn, MinMaxScaler, GridSearchCV, Confusion Matrix, Classification Report, Random Forest, Logistic Regression, Gaussian Naive Bayes, K-Nearest Neighbors, ROC Curve
-
-**Results**: Identified key factors contributing to Diabetes, developed predictive models, and gained insights into disease causation, enabling early detection and improved health outcomes.
-
-#### Water Potability Prediction
-
-**Code** : [Water Potability Prediction](https://github.com/tuanx18/ds-projects/blob/main/Water_Potable_Prediction.ipynb)
-
-**Description**: This collection provides measurements and predicts of water quality related to potability, which is the acceptability of water for human consumption. The major goal of the dataset is to provide insights into water quality characteristics and aid in deciding whether or not the water is potable. On this project, I employed machine learning techniques to anticipate the outcome of water sample records for following usage. The outcomes of models such as Categorical Boosting Classifier and Gaussian Naive Bayes Classifier may not be optimal due to the instability and disconnection between data fields.
-
-**Goal**: To determine the water if it is drinkable or not based on the statistics given
-
-**Skills**: data cleaning, data analysis, data visualization, machine learning, predictive models, confusion matrix, balancing data.
-
-**Technology**: Python, Pandas, Matplotlib, Histplot, Correlation Heatmap, Confusion Matrix, Classification Report, Gaussian Naive Bayes, CatBoost, SMOTE, Binning, Clustering
-
-**Results**: Successfully predicted water potability, enhancing the understanding of water quality and suitability for human consumption using machine learning techniques.
-
-#### Breast Cancer Prediction
-
-**Code** :[Breast Cancer Prediction](https://github.com/tuanx18/ds-projects/blob/main/Breast_Cancer_Prediction.ipynb)
-
-**Description**: I designed and executed a data-driven project focused on predicting the diagnosis of breast cancer. Leveraging a dataset comprising 27 feature columns related to health, I conducted a comprehensive analysis to forecast the likelihood of malignancy ("M") or benignity ("B"). The project encompassed crucial stages, including data cleaning, exploratory data analysis (EDA), and the application of various machine learning classifier models.
-
-**Goal**: To determine the diagnosis of the patients, to see if it is "B" (low chance) or "M" (positive for breast cancer)
-
-**Skills**: data cleaning, data analysis, data visualization, machine learning, confusion matrix, scaling.
-
-**Technology**: Python, Pandas, Numpy, Matplotlib, Correlation Heatmap, Confusion Matrix, Classification Report, ROC Curve, Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, K-Neighbors Classifier, GaussianNB, MinMaxScaler, StandardScaler
-
-**Results**: Effectively utilized machine learning to predict breast cancer diagnosis, distinguishing between benign and malignant cases.
-
-### 3. Apache Spark (Scala Spark, PySpark)
-
-*Public Repository:* [Apache Spark](https://github.com/tuanx18/apache-spark-projects)
-
-#### Billionaire Research And Exploration 
-
-**Code**: [Billionaire Research And Exploration](https://github.com/tuanx18/apache-spark-projects/blob/main/Billionaire_Research_And_Exploration.ipynb)
-
-**Description**: A comprehensive analysis project utilizing PySpark and the Billionaires Dataset to delve into the world of extreme wealth. The project involves data cleaning, exploration, and in-depth analysis of various attributes associated with billionaires worldwide. It encompasses observing trends, applying data scaling techniques, and implementing machine learning algorithms, such as K-means clustering and logistic regression using MLlib.
-
-**Goal**: To leverage PySpark and the Billionaires Dataset to conduct comprehensive data analysis, implement machine learning algorithms, and derive actionable insights into wealth distribution, demographic trends, and industry patterns among billionaires worldwide
-
-**Skills**: data cleaning, data analysis, data visualization, machine learning, predictive models, confusion matrix, data scaling.
-
-**Technology**: Apache Spark, PySpark, SQL, Python, Pandas, Matplotlib, Correlation Heatmap, Confusion Matrix, MLlib, K-Means Clustering, Logistic Regression
-
-**Results**: Yielded insightful findings, including distinct clusters of billionaires based on wealth attributes identified through K-means clustering, alongside predictive analysis of wealth accumulation factors using Logistic Regression, offering a great understanding of wealth distribution and demographic trends among billionaires globally.
-
-#### Big Data Fundamentals Journey with PySpark
-
-**Description**: Embark on a transformative journey into the world of Big Data using PySpark. This project is a progressive exploration, divided into four stages, reflecting my evolution from a novice to an intermediate PySpark enthusiast.
-
-##### Part 1 - Introduction to PySpark
-- **URL**: [Part 1 - Getting used to beginner level of SQL commands](https://github.com/tuanx18/apache-spark-projects/blob/main/Spark_1_Fundamentals.ipynb)
-- **Description**: In the initial phase, dive into the foundational concepts of PySpark. Learn its architecture, core functionalities, and basic data manipulation techniques. Gain hands-on experience with small-scale datasets, mastering RDDs (Resilient Distributed Datasets) and DataFrame APIs.
-
-##### Part 2 - Data Transformation and Processing
-- **URL**: [Part 2 - DataFrame in Pyspark](https://github.com/tuanx18/apache-spark-projects/blob/main/Spark_2_DataFrames.ipynb)
-- **Description**: Progress to a more sophisticated stage where data transformation becomes key. Explore PySpark's powerful capabilities in processing large volumes of data efficiently. Work with transformations, aggregations, and complex operations on diverse datasets.
-
-##### Part 3 - Data Visualization using PySpark
-- **URL**: [Part 3 - Data Visualization using PySpark](https://github.com/tuanx18/apache-spark-projects/blob/main/Spark_3_Data_Visualization.ipynb)
-- **Description**: Dive into the world of data visualization with PySpark. Discover techniques to visualize and comprehend data at scale. Leverage PySpark's visualization libraries and tools to create insightful visual representations of complex datasets.
-
-##### Part 4 - Machine Learning Application using MLlib
-- **URL**: [Part 4 - Machine Learning Application using MLlib](https://github.com/tuanx18/apache-spark-projects/blob/main/Spark_4_Machine_Learning_MLlib.ipynb)
-- **Description**: Take the leap into machine learning with PySpark. Explore the application of various machine learning algorithms using PySpark's MLlib library. Build and evaluate models for regression, classification, and clustering, empowering you to extract meaningful insights and predictions from Big Data.
-
-### 4. Structured Query Language (SQL)
-
-*Public Repository:* [SQL]()
-
-#### AdventureWorks Practical SQL - Knowledge Showcase Project
-
-**Note**: Taking advantage of the SQL Server's capability to import and open .bak files, I strategically used this feature by employing the AdventureWorks 2022 Database to create a significant project. This project serves as a comprehensive showcase, including a range of SQL commands from fundamental to advanced levels, covering intricate aspects such as Dynamic SQL and user functions.
-
-**Repository**: [AdventureWorks Practical Knowledge Showcase Project](https://github.com/tuanx18/ds-sql-AW-showcase/tree/main)
--->
-````
 **Technology**: *SQL - SQL Server*
 
 **Description**: This initiative utilizes the AdventureWorks 2022 Database as the foundational data source for knowledge acquisition. It is compartmentalized into 20 distinct sections, each designed to cover specific SQL concepts. Within each section, there are 50 SQL requirements, each articulated in a concise format ranging from a single line to a maximum of 50 lines, depending on the complexity of the task. The complexity of requirements intensifies progressively, ensuring comprehensive coverage from foundational to advanced levels. Each requirement is uniquely numbered from 1 to 1000, incorporating distinctive elements to prevent replication. The following is an exhaustive list detailing each segment of this comprehensive project, along with their respective specifics.
@@ -455,6 +151,4 @@ In my portfolio, you'll find a collection of diverse data science and data analy
 
 # THANKS FOR YOUR ATTENTION!
 
-Sincerely,
-
-*tuanx18*
+Sincerely
