@@ -1,3 +1,11 @@
+---
+permalink: /
+title: "Parveen Kumar"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
 # Parveen Kumar - A Data Engineering Portfolio
 
 *Exploring Data Realms: Parveen embarks on a journey through data engineering after a 2-year education in **Business Analytics**, specializing in **Data Engineering***
