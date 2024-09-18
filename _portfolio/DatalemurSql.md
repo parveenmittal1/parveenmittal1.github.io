@@ -1,7 +1,7 @@
 ---
 title: 'SQL & Data Interview Questions'
 date: 2024-09-18
-permalink: /posts/2012/08/blog-post-1/
+permalink: /posts/2012/08/blog-post-2/
 tags:
   - SQL
   - Datalemur
