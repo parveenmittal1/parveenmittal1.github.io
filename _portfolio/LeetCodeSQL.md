@@ -12,7 +12,6 @@ tags:
 
 Table: Project
 
-|-----------------------|
 | Column Name | Type    |
 |-------------|---------|
 | project_id  | int     |
@@ -25,7 +24,6 @@ Each row of this table indicates that the employee with employee_id is working o
 
 Table: Employee
 
-|------------------|---------|
 | Column Name      | Type    |
 |------------------|---------|
 | employee_id      | int     |
@@ -48,7 +46,7 @@ Example 1:
 
 Input:
 Project table:
-|-------------|-------------|
+
 | project_id  | employee_id |
 |-------------|-------------|
 | 1           | 1           |
@@ -56,23 +54,24 @@ Project table:
 | 1           | 3           |
 | 2           | 1           |
 | 2           | 4           |
-|-------------|-------------|
+
 Employee table:
-|-------------|--------|------------------|
+
 | employee_id | name   | experience_years |
 |-------------|--------|------------------|
 | 1           | Khaled | 3                |
 | 2           | Ali    | 2                |
 | 3           | John   | 1                |
 | 4           | Doe    | 2                |
-|-------------|--------|------------------|
+
 Output:
-|-------------|---------------|
+
 | project_id  | average_years |
 |-------------|---------------|
 | 1           | 2.00          |
 | 2           | 2.50          |
 |-------------|---------------|
+
 Explanation: The average experience years for the first project is (3 | 2 | 1) / 3 = 2.00 and for the second project is (3 | 2) / 2 = 2.50
 
 Solution:
@@ -95,7 +94,6 @@ group by project_id;
 Table: Signups
 
 
-|----------------|----------|
 | Column Name    | Type     |
 |----------------|----------|
 | user_id        | int      |
@@ -107,7 +105,6 @@ Each row contains information about the signup time for the user with ID user_id
 
 Table: Confirmations
 
-|----------------|----------|
 | Column Name    | Type     |
 |----------------|----------|
 | user_id        | int      |
@@ -134,7 +131,7 @@ Example 1:
 
 Input:
 Signups table:
-|---------|---------------------|
+
 | user_id | time_stamp          |
 |---------|---------------------|
 | 3       | 2020-03-21 10:16:13 |
@@ -143,7 +140,7 @@ Signups table:
 | 6       | 2020-12-09 10:39:37 |
 |---------|---------------------|
 Confirmations table:
-|---------|---------------------|-----------|
+
 | user_id | time_stamp          | action    |
 |---------|---------------------|-----------|
 | 3       | 2021-01-06 03:30:46 | timeout   |
@@ -155,7 +152,7 @@ Confirmations table:
 | 2       | 2021-02-28 23:59:59 | timeout   |
 |---------|---------------------|-----------|
 Output:
-|---------|-------------------|
+
 | user_id | confirmation_rate |
 |---------|-------------------|
 | 6       | 0.00              |
