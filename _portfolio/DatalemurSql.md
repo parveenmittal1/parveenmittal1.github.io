@@ -39,7 +39,7 @@ Solution:
 ---------------------------------------
 ---------------------------------------
 
-
+```sql
 SELECT
 user_id,
 MAX(post_date::DATE) - MIN(post_date::DATE) AS days_between
@@ -54,7 +54,7 @@ COUNT(post_id) > 1
 ORDER BY
 user_id;
 
-
+```
 
 Laptop vs. Mobile Viewership [New York Times SQL Interview Question]
 
@@ -89,7 +89,11 @@ The dataset you are querying against may have different input & output - this is
 Solution:
 ---------------------------------------
 ---------------------------------------
+```sql
+
 SELECT
 SUM(CASE WHEN device_type = 'laptop' THEN 1 ELSE 0 END) AS laptop_count,
 SUM(CASE WHEN device_type IN ('phone', 'tablet') THEN 1 ELSE 0 END) AS mobile_count
 FROM viewership;
+
+```
