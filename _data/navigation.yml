@@ -12,9 +12,6 @@ main:
     url: /talks/
 
   - title: "Blog Posts"
-    url: /post/
-    
-  - title: "Blog Posts"
     url: /portfolio/
         
 #  - title: "Blog Posts"
