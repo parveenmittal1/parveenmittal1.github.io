@@ -17,6 +17,7 @@ Table: Project
 | project_id  | int     |
 | employee_id | int     |
 |-------------|---------|
+
 (project_id, employee_id) is the primary key of this table.
 employee_id is a foreign key to Employee table.
 Each row of this table indicates that the employee with employee_id is working on the project with project_id.
@@ -30,6 +31,7 @@ Table: Employee
 | name             | varchar |
 | experience_years | int     |
 |------------------|---------|
+
 employee_id is the primary key of this table. It's guaranteed that experience_years is not NULL.
 Each row of this table contains information about one employee.
 
@@ -99,6 +101,7 @@ Table: Signups
 | user_id        | int      |
 | time_stamp     | datetime |
 |----------------|----------|
+
 user_id is the column of unique values for this table.
 Each row contains information about the signup time for the user with ID user_id.
 
@@ -111,6 +114,7 @@ Table: Confirmations
 | time_stamp     | datetime |
 | action         | ENUM     |
 |----------------|----------|
+
 (user_id, time_stamp) is the primary key (combination of columns with unique values) for this table.
 user_id is a foreign key (reference column) to the Signups table.
 action is an ENUM (category) of the type ('confirmed', 'timeout')
@@ -139,6 +143,7 @@ Signups table:
 | 2       | 2020-07-29 23:09:44 |
 | 6       | 2020-12-09 10:39:37 |
 |---------|---------------------|
+
 Confirmations table:
 
 | user_id | time_stamp          | action    |
@@ -151,6 +156,7 @@ Confirmations table:
 | 2       | 2021-01-22 00:00:00 | confirmed |
 | 2       | 2021-02-28 23:59:59 | timeout   |
 |---------|---------------------|-----------|
+
 Output:
 
 | user_id | confirmation_rate |
@@ -160,6 +166,7 @@ Output:
 | 7       | 1.00              |
 | 2       | 0.50              |
 |---------|-------------------|
+
 Explanation:
 User 6 did not request any confirmation messages. The confirmation rate is 0.
 User 3 made 2 requests and both timed out. The confirmation rate is 0.
