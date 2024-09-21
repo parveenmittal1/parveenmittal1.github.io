@@ -193,7 +193,7 @@ CTE.user_Id = CTE2.user_Id;
 
 ```
 
-1193. Monthly Transactions I
+  1193. Monthly Transactions I
       Medium
 
 
