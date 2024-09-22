@@ -7,7 +7,7 @@ tags:
   - LeetCode
   - Data Engineer
 ---
-1075. Project Employees I
+Q-1075. Project Employees I
       Easy 
 
 Table: Project
@@ -88,7 +88,7 @@ group by project_id;
 
 
 
-1934. Confirmation Rate
+Q-1934. Confirmation Rate
       Medium
 
 
@@ -193,7 +193,7 @@ CTE.user_Id = CTE2.user_Id;
 
 ```
 
-  1193. Monthly Transactions I
+Q-1193. Monthly Transactions I
       Medium
 
 
@@ -257,5 +257,70 @@ sum(amount) as trans_total_amount,
 SUM(CASE WHEN state = 'approved' THEN amount ELSE 0 END) as approved_total_amount
 
 from Transactions group by DATE_FORMAT(trans_date , '%Y-%m'),country;
+
+```
+
+
+Q-197. Rising Temperature
+Easy
+
+
+Table: Weather
+
+| Column Name   | Type    |
+|---------------|---------|
+| id            | int     |
+| recordDate    | date    |
+| temperature   | int     |
+|---------------|---------|
+
+id is the column with unique values for this table.
+There are no different rows with the same recordDate.
+This table contains information about the temperature on a certain day.
+
+
+Write a solution to find all dates' id with higher temperatures compared to its previous dates (yesterday).
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+Weather table:
+
+| id | recordDate | temperature |
+|----|------------|-------------|
+| 1  | 2015-01-01 | 10          |
+| 2  | 2015-01-02 | 25          |
+| 3  | 2015-01-03 | 20          |
+| 4  | 2015-01-04 | 30          |
+|----|------------|-------------|
+
+Output:
+
+| id |
+|----|
+| 2  |
+| 4  |
+|----|
+
+Explanation:
+In 2015-01-02, the temperature was higher than the previous day (10 -> 25).
+In 2015-01-04, the temperature was higher than the previous day (20 -> 30).
+
+
+```sql 
+# Write your MySQL query statement below
+with CTE as (
+select id,lag(temperature,1) over() as temp1,lag(recordDate,1) over() as recordDate1,temperature,recordDate from weather
+order by recordDate
+)
+
+Select id from CTE 
+ where temperature-COALESCE(temp1,1110)>0 and TIMESTAMPDIFF(DAY, recordDate1, recordDate) =1  ;
 
 ```
