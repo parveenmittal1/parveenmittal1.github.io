@@ -420,3 +420,211 @@ SELECT machine_id,round((lead_processing_time-processing_time ),3) as processing
 FROM CTE2 where lead_processing_time is not null;
 
 ```
+
+
+Question:1045. Customers Who Bought All Products
+      Medium
+      Table: Customer
+
+| Column Name | Type    |
+|-------------|---------|
+| customer_id | int     |
+| product_key | int     |
+|-------------|---------|
+This table may contain duplicates rows.
+customer_id is not NULL.
+product_key is a foreign key (reference column) to Product table.
+
+
+Table: Product
+
+| Column Name | Type    |
+|-------------|---------|
+| product_key | int     |
+|-------------|---------|
+product_key is the primary key (column with unique values) for this table.
+
+
+Write a solution to report the customer ids from the Customer table that bought all the products in the Product table.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+Customer table:
+
+| customer_id | product_key |
+|-------------|-------------|
+| 1           | 5           |
+| 2           | 6           |
+| 3           | 5           |
+| 3           | 6           |
+| 1           | 6           |
+|-------------|-------------|
+Product table:
+
+| product_key |
+|-------------|
+| 5           |
+| 6           |
+|-------------|
+
+Output:
+
+| customer_id |
+|-------------|
+| 1           |
+| 3           |
+|-------------|
+Explanation:
+The customers who bought all the products (5 and 6) are customers with IDs 1 and 3.
+
+```sql
+
+
+SELECT customer_id
+FROM Customer
+GROUP BY customer_id
+HAVING COUNT(DISTINCT product_key) = (SELECT COUNT(*) FROM Product);
+
+
+```
+
+
+Question: 196. Delete Duplicate Emails
+     Easy
+     Table: Person
+
+| Column Name | Type    |
+|-------------|---------|
+| id          | int     |
+| email       | varchar |
+|-------------|---------|
+
+id is the primary key (column with unique values) for this table.
+Each row of this table contains an email. The emails will not contain uppercase letters.
+
+
+Write a solution to delete all duplicate emails, keeping only one unique email with the smallest id.
+
+For SQL users, please note that you are supposed to write a DELETE statement and not a SELECT one.
+
+For Pandas users, please note that you are supposed to modify Person in place.
+
+After running your script, the answer shown is the Person table. The driver will first compile and run your piece of code and then show the Person table. The final order of the Person table does not matter.
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+Person table:
+
+| id | email            |
+|----|------------------|
+| 1  | john@example.com |
+| 2  | bob@example.com  |
+| 3  | john@example.com |
+|----|------------------|
+
+Output:
+
+| id | email            |
+|----|------------------|
+| 1  | john@example.com |
+| 2  | bob@example.com  |
+|----|------------------|
+
+Explanation: john@example.com is repeated two times. We keep the row with the smallest Id = 1.
+
+```SQL
+
+DELETE FROM Person
+WHERE id NOT IN (
+    SELECT id FROM (
+        SELECT MIN(id) AS id
+        FROM Person
+        GROUP BY email
+    ) AS subquery
+);
+
+```
+
+
+Question:176. Second Highest Salary
+Medium
+
+Table: Employee
+
+
+| Column Name | Type |
+|-------------|------|
+| id          | int  |
+| salary      | int  |
+|-------------|------|
+id is the primary key (column with unique values) for this table.
+Each row of this table contains information about the salary of an employee.
+
+
+Write a solution to find the second highest distinct salary from the Employee table. If there is no second highest salary, return null (return None in Pandas).
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+Employee table:
+
+| id | salary |
+|----|--------|
+| 1  | 100    |
+| 2  | 200    |
+| 3  | 300    |
+|----|--------|
+Output:
+
+| SecondHighestSalary |
+|---------------------|
+| 200                 |
+|---------------------|
+Example 2:
+
+Input:
+Employee table:
+
+| id | salary |
+|----|--------|
+| 1  | 100    |
+|----|--------|
+Output:
+
+| SecondHighestSalary |
+|---------------------|
+| null                |
+|---------------------|
+
+
+```SQL
+
+WITH CTE AS (
+    SELECT Salary, dense_RANK() OVER (ORDER BY Salary DESC) AS s_rank
+    FROM Employee
+)
+SELECT 
+    COALESCE((
+        SELECT Salary 
+        FROM CTE 
+        WHERE s_rank = 2
+        LIMIT 1
+    ), NULL) AS SecondHighestSalary;
+
+```
