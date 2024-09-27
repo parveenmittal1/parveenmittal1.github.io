@@ -7,7 +7,7 @@ tags:
   - LeetCode
   - Data Engineer
 ---
-Q-1075. Project Employees I
+## Q-1075. Project Employees I
       Easy 
 
 Table: Project
@@ -88,7 +88,7 @@ group by project_id;
 
 
 
-Q-1934. Confirmation Rate
+## Q-1934. Confirmation Rate
       Medium
 
 
@@ -193,7 +193,7 @@ CTE.user_Id = CTE2.user_Id;
 
 ```
 
-Q-1193. Monthly Transactions I
+## Q-1193. Monthly Transactions I
       Medium
 
 
@@ -261,8 +261,8 @@ from Transactions group by DATE_FORMAT(trans_date , '%Y-%m'),country;
 ```
 
 
-Q-197. Rising Temperature
-Easy
+## Q-197. Rising Temperature
+         Easy
 
 
 Table: Weather
@@ -325,7 +325,7 @@ Select id from CTE
 
 ```
 
-Question:1661. Average Time of Process per Machine
+## Question:1661. Average Time of Process per Machine
       Easy
       SQL Schema
       Table: Activity
@@ -422,7 +422,7 @@ FROM CTE2 where lead_processing_time is not null;
 ```
 
 
-Question:1045. Customers Who Bought All Products
+## Question:1045. Customers Who Bought All Products
       Medium
       Table: Customer
 
@@ -500,7 +500,7 @@ HAVING COUNT(DISTINCT product_key) = (SELECT COUNT(*) FROM Product);
 ```
 
 
-Question: 196. Delete Duplicate Emails
+## Question: 196. Delete Duplicate Emails
      Easy
      Table: Person
 
@@ -562,8 +562,8 @@ WHERE id NOT IN (
 ```
 
 
-Question:176. Second Highest Salary
-Medium
+## Question:176. Second Highest Salary
+     Medium
 
 Table: Employee
 
@@ -639,7 +639,7 @@ SELECT
 
 ```
 
-Question-185. Department Top Three Salaries
+## Question-185. Department Top Three Salaries
      Hard
      Table: Employee
 
@@ -752,7 +752,7 @@ WHERE
 
 ```
 
-Question-577. Employee Bonus
+## Question-577. Employee Bonus
      Easy
      Table: Employee
 
@@ -831,7 +831,7 @@ or Bonus.bonus is null;
 ```
 
 
-Question:1280. Students and Examinations
+## Question:1280. Students and Examinations
       Easy
       Table: Students
 
@@ -954,7 +954,7 @@ order by  Students.student_id, Subjects.subject_name
 ```
 
 
-Question-620. Not Boring Movies
+## Question-620. Not Boring Movies
      Easy
      Table: Cinema
 
@@ -1014,7 +1014,7 @@ order by rating  desc;
 ```
 
 
-Questions-1251. Average Selling Price
+## Questions-1251. Average Selling Price
       Easy
       Table: Prices
 
@@ -1103,9 +1103,9 @@ group by Prices.product_id;
 
 ```
 
-Question-1211. Queries Quality and Percentage
-Easy
-Table: Queries
+## Question-1211. Queries Quality and Percentage
+    Easy
+    Table: Queries
 
 | Column Name | Type    |
 |-------------|---------|
@@ -1163,10 +1163,10 @@ Output:
 |------------|---------|-----------------------|
 
 Explanation:
-Dog queries quality is ((5 / 1) + (5 / 2) + (1 / 200)) / 3 = 2.50
+Dog queries quality is ((5 / 1) | (5 / 2) | (1 / 200)) / 3 = 2.50
 Dog queries poor_ query_percentage is (1 / 3) * 100 = 33.33
 
-Cat queries quality equals ((2 / 5) + (3 / 3) + (4 / 7)) / 3 = 0.66
+Cat queries quality equals ((2 / 5) | (3 / 3) | (4 / 7)) / 3 = 0.66
 Cat queries poor_ query_percentage is (1 / 3) * 100 = 33.33
 
 
@@ -1176,5 +1176,90 @@ Cat queries poor_ query_percentage is (1 / 3) * 100 = 33.33
 select query_name ,round(avg(rating/position ),2)  as quality , round(avg(if( rating <3 , 1,0))*100,2)  as poor_query_percentage  from Queries where query_name is not null
 
 Group by query_name
+
+```
+
+
+
+
+## Questions-1174. Immediate Food Delivery II
+    Medium
+
+Table: Delivery
+
+| Column Name                 | Type    |
+|-----------------------------|---------|
+| delivery_id                 | int     |
+| customer_id                 | int     |
+| order_date                  | date    |
+| customer_pref_delivery_date | date    |
+|-----------------------------|---------|
+
+delivery_id is the column of unique values of this table.
+The table holds information about food delivery to customers that make orders at some date and specify a preferred delivery date (on the same order date or after it).
+
+
+If the customer's preferred delivery date is the same as the order date, then the order is called immediate; otherwise, it is called scheduled.
+
+The first order of a customer is the order with the earliest order date that the customer made. It is guaranteed that a customer has precisely one first order.
+
+Write a solution to find the percentage of immediate orders in the first orders of all customers, rounded to 2 decimal places.
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+Delivery table:
+
+| delivery_id | customer_id | order_date | customer_pref_delivery_date |
+|-------------|-------------|------------|-----------------------------|
+| 1           | 1           | 2019-08-01 | 2019-08-02                  |
+| 2           | 2           | 2019-08-02 | 2019-08-02                  |
+| 3           | 1           | 2019-08-11 | 2019-08-12                  |
+| 4           | 3           | 2019-08-24 | 2019-08-24                  |
+| 5           | 3           | 2019-08-21 | 2019-08-22                  |
+| 6           | 2           | 2019-08-11 | 2019-08-13                  |
+| 7           | 4           | 2019-08-09 | 2019-08-09                  |
+|-------------|-------------|------------|-----------------------------|
+
+Output:
+
+| immediate_percentage |
+|----------------------|
+| 50.00                |
+|----------------------|
+
+Explanation:
+The customer id 1 has a first order with delivery id 1 and it is scheduled.
+The customer id 2 has a first order with delivery id 2 and it is immediate.
+The customer id 3 has a first order with delivery id 5 and it is scheduled.
+The customer id 4 has a first order with delivery id 7 and it is immediate.
+Hence, half the customers have immediate first orders.
+
+
+
+
+
+
+```SQL
+
+WITH CTE AS (
+    SELECT *,
+        
+        DENSE_RANK() OVER (PARTITION BY customer_id ORDER BY order_date) AS `rank`
+    FROM 
+        Delivery
+)
+
+SELECT 
+    ROUND(SUM(CASE WHEN order_date=customer_pref_delivery_date THEN 1 ELSE 0 END)/count(DISTINCT customer_id)*100, 2) as  immediate_percentage
+    from 
+    CTE
+WHERE 
+    cte.`rank` = 1;
+
 
 ```
