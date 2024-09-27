@@ -742,3 +742,425 @@ WHERE
 
 ```
 
+Question-577. Employee Bonus
+     Easy
+     Table: Employee
+
+| Column Name | Type    |
+|-------------|---------|
+| empId       | int     |
+| name        | varchar |
+| supervisor  | int     |
+| salary      | int     |
+|-------------|---------|
+empId is the column with unique values for this table.
+Each row of this table indicates the name and the ID of an employee in addition to their salary and the id of their manager.
+
+
+Table: Bonus
+
+| Column Name | Type |
+|-------------|------|
+| empId       | int  |
+| bonus       | int  |
+|-------------|------|
+empId is the column of unique values for this table.
+empId is a foreign key (reference column) to empId from the Employee table.
+Each row of this table contains the id of an employee and their respective bonus.
+
+
+Write a solution to report the name and bonus amount of each employee with a bonus less than 1000.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+
+Employee table:
+
+| empId | name   | supervisor | salary |
+|-------|--------|------------|--------|
+| 3     | Brad   | null       | 4000   |
+| 1     | John   | 3          | 1000   |
+| 2     | Dan    | 3          | 2000   |
+| 4     | Thomas | 3          | 4000   |
+|-------|--------|------------|--------|
+
+Bonus table:
+
+| empId | bonus |
+|-------|-------|
+| 2     | 500   |
+| 4     | 2000  |
+|-------|-------|
+
+Output:
+
+| name | bonus |
+|------|-------|
+| Brad | null  |
+| John | null  |
+| Dan  | 500   |
+|------|-------|
+
+
+```SQL
+
+# Write your MySQL query statement below
+select employee.name,bonus.bonus from Employee left join  bonus on employee.empId = Bonus.empId
+where Bonus.bonus<1000 
+or Bonus.bonus is null;
+
+```
+
+
+Question:1280. Students and Examinations
+      Easy
+      Table: Students
+
+| Column Name   | Type    |
+|---------------|---------|
+| student_id    | int     |
+| student_name  | varchar |
+|---------------|---------|
+
+student_id is the primary key (column with unique values) for this table.
+Each row of this table contains the ID and the name of one student in the school.
+
+
+Table: Subjects
+
+| Column Name  | Type    |
+|--------------|---------|
+| subject_name | varchar |
+|--------------|---------|
+
+subject_name is the primary key (column with unique values) for this table.
+Each row of this table contains the name of one subject in the school.
+
+
+Table: Examinations
+
+| Column Name  | Type    |
+|--------------|---------|
+| student_id   | int     |
+| subject_name | varchar |
+|--------------|---------|
+
+There is no primary key (column with unique values) for this table. It may contain duplicates.
+Each student from the Students table takes every course from the Subjects table.
+Each row of this table indicates that a student with ID student_id attended the exam of subject_name.
+
+
+Write a solution to find the number of times each student attended each exam.
+
+Return the result table ordered by student_id and subject_name.
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+
+Students table:
+
+| student_id | student_name |
+|------------|--------------|
+| 1          | Alice        |
+| 2          | Bob          |
+| 13         | John         |
+| 6          | Alex         |
+|------------|--------------|
+
+Subjects table:
+
+| subject_name |
+|--------------|
+| Math         |
+| Physics      |
+| Programming  |
+|--------------|
+
+Examinations table:
+
+| student_id | subject_name |
+|------------|--------------|
+| 1          | Math         |
+| 1          | Physics      |
+| 1          | Programming  |
+| 2          | Programming  |
+| 1          | Physics      |
+| 1          | Math         |
+| 13         | Math         |
+| 13         | Programming  |
+| 13         | Physics      |
+| 2          | Math         |
+| 1          | Math         |
+|------------|--------------|
+
+Output:
+
+| student_id | student_name | subject_name | attended_exams |
+|------------|--------------|--------------|----------------|
+| 1          | Alice        | Math         | 3              |
+| 1          | Alice        | Physics      | 2              |
+| 1          | Alice        | Programming  | 1              |
+| 2          | Bob          | Math         | 1              |
+| 2          | Bob          | Physics      | 0              |
+| 2          | Bob          | Programming  | 1              |
+| 6          | Alex         | Math         | 0              |
+| 6          | Alex         | Physics      | 0              |
+| 6          | Alex         | Programming  | 0              |
+| 13         | John         | Math         | 1              |
+| 13         | John         | Physics      | 1              |
+| 13         | John         | Programming  | 1              |
+|------------|--------------|--------------|----------------|
+
+Explanation:
+The result table should contain all students and all subjects.
+Alice attended the Math exam 3 times, the Physics exam 2 times, and the Programming exam 1 time.
+Bob attended the Math exam 1 time, the Programming exam 1 time, and did not attend the Physics exam.
+Alex did not attend any exams.
+John attended the Math exam 1 time, the Physics exam 1 time, and the Programming exam 1 time.
+
+```SQL
+
+SELECT Students.student_id, student_name, Subjects.subject_name, COUNT(Examinations.student_id) AS attended_exams
+FROM Students JOIN Subjects
+LEFT JOIN Examinations
+ON Students.student_id = Examinations.student_id AND Subjects.subject_name = Examinations.subject_name
+GROUP BY Students.student_id, subject_name
+order by  Students.student_id, Subjects.subject_name
+
+```
+
+
+Question-620. Not Boring Movies
+     Easy
+     Table: Cinema
+
+| Column Name    | Type     |
+|----------------|----------|
+| id             | int      |
+| movie          | varchar  |
+| description    | varchar  |
+| rating         | float    |
+|----------------|----------|
+
+id is the primary key (column with unique values) for this table.
+Each row contains information about the name of a movie, its genre, and its rating.
+rating is a 2 decimal places float in the range [0, 10]
+
+
+Write a solution to report the movies with an odd-numbered ID and a description that is not "boring".
+
+Return the result table ordered by rating in descending order.
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+Cinema table:
+
+| id | movie      | description | rating |
+|----|------------|-------------|--------|
+| 1  | War        | great 3D    | 8.9    |
+| 2  | Science    | fiction     | 8.5    |
+| 3  | irish      | boring      | 6.2    |
+| 4  | Ice song   | Fantacy     | 8.6    |
+| 5  | House card | Interesting | 9.1    |
+|----|------------|-------------|--------|
+
+Output:
+
+| id | movie      | description | rating |
+|----|------------|-------------|--------|
+| 5  | House card | Interesting | 9.1    |
+| 1  | War        | great 3D    | 8.9    |
+|----|------------|-------------|--------|
+
+Explanation:
+We have three movies with odd-numbered IDs: 1, 3, and 5. The movie with ID = 3 is boring so we do not include it in the answer.
+
+
+```SQL
+# Write your MySQL query statement below
+select * from Cinema
+where id%2 =1 and description != 'boring'
+order by rating  desc; 
+
+```
+
+
+Questions-1251. Average Selling Price
+      Easy
+      Table: Prices
+
+
+| Column Name   | Type    |
+|---------------|---------|
+| product_id    | int     |
+| start_date    | date    |
+| end_date      | date    |
+| price         | int     |
+|---------------|---------|
+(product_id, start_date, end_date) is the primary key (combination of columns with unique values) for this table.
+Each row of this table indicates the price of the product_id in the period from start_date to end_date.
+For each product_id there will be no two overlapping periods. That means there will be no two intersecting periods for the same product_id.
+
+
+Table: UnitsSold
+
+
+| Column Name   | Type    |
+|---------------|---------|
+| product_id    | int     |
+| purchase_date | date    |
+| units         | int     |
+|---------------|---------|
+This table may contain duplicate rows.
+Each row of this table indicates the date, units, and product_id of each product sold.
+
+
+Write a solution to find the average selling price for each product. average_price should be rounded to 2 decimal places. If a product does not have any sold units, its average selling price is assumed to be 0.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+Prices table:
+
+| product_id | start_date | end_date   | price  |
+|------------|------------|------------|--------|
+| 1          | 2019-02-17 | 2019-02-28 | 5      |
+| 1          | 2019-03-01 | 2019-03-22 | 20     |
+| 2          | 2019-02-01 | 2019-02-20 | 15     |
+| 2          | 2019-02-21 | 2019-03-31 | 30     |
+|------------|------------|------------|--------|
+
+UnitsSold table:
+
+| product_id | purchase_date | units |
+|------------|---------------|-------|
+| 1          | 2019-02-25    | 100   |
+| 1          | 2019-03-01    | 15    |
+| 2          | 2019-02-10    | 200   |
+| 2          | 2019-03-22    | 30    |
+|------------|---------------|-------|
+
+Output:
+
+| product_id | average_price |
+|------------|---------------|
+| 1          | 6.96          |
+| 2          | 16.96         |
+|------------|---------------|
+
+Explanation:
+Average selling price = Total Price of Product / Number of products sold.
+Average selling price for product 1 = ((100 * 5) | (15 * 20)) / 115 = 6.96
+Average selling price for product 2 = ((200 * 15) | (30 * 30)) / 230 = 16.96
+
+
+
+```sql
+
+# Write your MySQL query statement below
+select Prices.product_id, round(sum(coalesce(price,0)*coalesce(units,0))/sum(coalesce(units,0)),2) as average_price from prices left join UnitsSold
+
+on Prices.product_id=UnitsSold.product_id
+where purchase_date between start_date  and end_date   
+group by Prices.product_id;
+
+```
+
+Question-1211. Queries Quality and Percentage
+Easy
+Table: Queries
+
+| Column Name | Type    |
+|-------------|---------|
+| query_name  | varchar |
+| result      | varchar |
+| position    | int     |
+| rating      | int     |
+|-------------|---------|
+
+This table may have duplicate rows.
+This table contains information collected from some queries on a database.
+The position column has a value from 1 to 500.
+The rating column has a value from 1 to 5. Query with rating less than 3 is a poor query.
+
+
+We define query quality as:
+
+The average of the ratio between query rating and its position.
+
+We also define poor query percentage as:
+
+The percentage of all queries with rating less than 3.
+
+Write a solution to find each query_name, the quality and poor_query_percentage.
+
+Both quality and poor_query_percentage should be rounded to 2 decimal places.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+Queries table:
+
+| query_name | result            | position | rating |
+|------------|-------------------|----------|--------|
+| Dog        | Golden Retriever  | 1        | 5      |
+| Dog        | German Shepherd   | 2        | 5      |
+| Dog        | Mule              | 200      | 1      |
+| Cat        | Shirazi           | 5        | 2      |
+| Cat        | Siamese           | 3        | 3      |
+| Cat        | Sphynx            | 7        | 4      |
+|------------|-------------------|----------|--------|
+
+Output:
+
+| query_name | quality | poor_query_percentage |
+|------------|---------|-----------------------|
+| Dog        | 2.50    | 33.33                 |
+| Cat        | 0.66    | 33.33                 |
+|------------|---------|-----------------------|
+
+Explanation:
+Dog queries quality is ((5 / 1) + (5 / 2) + (1 / 200)) / 3 = 2.50
+Dog queries poor_ query_percentage is (1 / 3) * 100 = 33.33
+
+Cat queries quality equals ((2 / 5) + (3 / 3) + (4 / 7)) / 3 = 0.66
+Cat queries poor_ query_percentage is (1 / 3) * 100 = 33.33
+
+
+```SQL
+
+# Write your MySQL query statement below
+select query_name ,round(avg(rating/position ),2)  as quality , round(avg(if( rating <3 , 1,0))*100,2)  as poor_query_percentage  from Queries where query_name is not null
+
+Group by query_name
+
+```
