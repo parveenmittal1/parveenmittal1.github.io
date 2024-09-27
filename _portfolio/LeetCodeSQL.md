@@ -431,6 +431,7 @@ Question:1045. Customers Who Bought All Products
 | customer_id | int     |
 | product_key | int     |
 |-------------|---------|
+
 This table may contain duplicates rows.
 customer_id is not NULL.
 product_key is a foreign key (reference column) to Product table.
@@ -442,6 +443,7 @@ Table: Product
 |-------------|---------|
 | product_key | int     |
 |-------------|---------|
+
 product_key is the primary key (column with unique values) for this table.
 
 
@@ -466,6 +468,7 @@ Customer table:
 | 3           | 6           |
 | 1           | 6           |
 |-------------|-------------|
+
 Product table:
 
 | product_key |
@@ -481,6 +484,7 @@ Output:
 | 1           |
 | 3           |
 |-------------|
+
 Explanation:
 The customers who bought all the products (5 and 6) are customers with IDs 1 and 3.
 
@@ -569,6 +573,7 @@ Table: Employee
 | id          | int  |
 | salary      | int  |
 |-------------|------|
+
 id is the primary key (column with unique values) for this table.
 Each row of this table contains information about the salary of an employee.
 
@@ -590,12 +595,15 @@ Employee table:
 | 2  | 200    |
 | 3  | 300    |
 |----|--------|
+
 Output:
 
 | SecondHighestSalary |
 |---------------------|
 | 200                 |
 |---------------------|
+
+
 Example 2:
 
 Input:
@@ -605,6 +613,8 @@ Employee table:
 |----|--------|
 | 1  | 100    |
 |----|--------|
+
+
 Output:
 
 | SecondHighestSalary |
@@ -753,6 +763,7 @@ Question-577. Employee Bonus
 | supervisor  | int     |
 | salary      | int     |
 |-------------|---------|
+
 empId is the column with unique values for this table.
 Each row of this table indicates the name and the ID of an employee in addition to their salary and the id of their manager.
 
@@ -764,6 +775,7 @@ Table: Bonus
 | empId       | int  |
 | bonus       | int  |
 |-------------|------|
+
 empId is the column of unique values for this table.
 empId is a foreign key (reference column) to empId from the Employee table.
 Each row of this table contains the id of an employee and their respective bonus.
@@ -1014,6 +1026,7 @@ Questions-1251. Average Selling Price
 | end_date      | date    |
 | price         | int     |
 |---------------|---------|
+
 (product_id, start_date, end_date) is the primary key (combination of columns with unique values) for this table.
 Each row of this table indicates the price of the product_id in the period from start_date to end_date.
 For each product_id there will be no two overlapping periods. That means there will be no two intersecting periods for the same product_id.
@@ -1028,6 +1041,7 @@ Table: UnitsSold
 | purchase_date | date    |
 | units         | int     |
 |---------------|---------|
+
 This table may contain duplicate rows.
 Each row of this table indicates the date, units, and product_id of each product sold.
 
